@@ -35,6 +35,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "bootstrap": "~3.3.5",
+    "broccoli": "^2.0.1",
     "broccoli-asset-rev": "^2.4.5",
     "broccoli-export-text": "0.0.2",
     "broccoli-funnel": "^2.0.1",
