@@ -1,0 +1,10 @@
+{{#if session.isAuthenticated}}
+  {{sidebar-nav
+      allowSearch=(readonly allowSearch)
+      isShowingSettings=(readonly isShowingSettings)
+      openModal="openModal"
+      search="search"
+  }}
+{{/if}}
+{{outlet}}
+{{outlet "modal"}}
