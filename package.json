@@ -1,8 +1,8 @@
 {
-  "name": "hospitalrun",
+  "name": "medihos",
   "version": "1.0.0-beta",
-  "description": "Ember front end for HospitalRun",
-  "homepage": "http://hospitalrun.io",
+  "description": "Ember front end for HospitalRun - clone",
+  "homepage": " ",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -22,16 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:HospitalRun/hospitalrun-frontend"
+    "url": "git@github.com:Dewdrops-NG/medihos-frontend"
   },
   "engines": {
     "node": ">= 6"
   },
-  "author": "John Kleinschmidt",
-  "contributors": [
-    "Joel Worrall",
-    "Joel Glovier"
-  ],
   "license": "GPL-3.0",
   "devDependencies": {
     "@ember/test-helpers": "^1.0.1",
