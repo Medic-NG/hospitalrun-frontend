@@ -18,7 +18,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 1. Clone the HospitalRun fork repository: `git clone https://github.com/Medic-NG/hospitalrun-frontend.git`
 1. Change directory to repository folder `cd /srv/hospitalrun-frontend`
 1. Bring up the containers: `docker-compose up -d`
-1. Wait for the containers to pull and go online. This could take several minutes. You will know it's done once you are back in the command prompt. If the installation hangs, just hit `Ctrl+C` and run `docker-compose up -d` again. You may need to do this a few times.
+1. Wait for the containers to pull and go online. This could take several minutes. You will know it's done once you are back in the command prompt. If the installation hangs, just hit `Ctrl+C` and run `docker-compose up -d` again. It tends to take a while at the `warning "ember-fullcalendar > fullcalendar@3.10.0" has unmet peer dependency "moment@^2.20.1".` build step. Just wait for it.
 
 ### Configuration ###
 1. Create a bash script to automate git pulls: `nano /root/git-pull.sh` and insert the following code into the nano editor:
