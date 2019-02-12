@@ -18,7 +18,19 @@ sudo chmod +x /usr/local/bin/docker-compose
 1. Clone the HospitalRun fork repository: `git clone https://github.com/Medic-NG/hospitalrun-frontend.git`
 1. Change directory to repository folder `cd /srv/hospitalrun-frontend`
 1. Bring up the containers: `docker-compose up -d`
-1. Wait for the containers to pull and go online. This could take several minutes. You will know it's done once you are back in the command prompt.
+1. Wait for the containers to pull and go online. This could take several minutes. You will know it's done once you are back in the command prompt. If the installation hangs, just hit `Ctrl+C` and run `docker-compose up -d` again. You may need to do this a few times.
 
 ### Configuration ###
-1. Create a bash script to automate git pulls: `nano /root/git-pull.sh` and insert the following code into the nano editor: `
+1. Create a bash script to automate git pulls: `nano /root/git-pull.sh` and insert the following code into the nano editor:
+```
+#!/bin/bash
+
+cd /srv/hospitalrun-frontend
+git pull
+```
+2. Make script executable: `chmod u+x /root/git-pull.sh`
+3. Create a crontab for the script. Run `crontab -e`, select "nano" as the editor if it asks, then enter the following text in a new line:
+```
+00 * * * * /root/git-pull.sh
+```
+4. Hit `Ctrl+X` then `Y` to save the crontab. The `git-pull.sh` script should now run every hour.
