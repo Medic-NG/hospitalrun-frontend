@@ -17,8 +17,11 @@ sudo chmod +x /usr/local/bin/docker-compose
 1. Change directory: `cd /srv`
 1. Clone the HospitalRun fork repository: `git clone https://github.com/Medic-NG/hospitalrun-frontend.git`
 1. Change directory to repository folder `cd /srv/hospitalrun-frontend`
+1. Run `chmod u+x scripts/initcouch.sh`
+1. Build containers: `docker-compose build`
+1. Wait for the containers to build. This could take several minutes. You will know it's done once you are back in the command prompt. If the installation hangs, just hit `Ctrl+C` and run `docker-compose up -d` again. It tends to take a while at the `warning "ember-fullcalendar > fullcalendar@3.10.0" has unmet peer dependency "moment@^2.20.1".` build step. Just wait for it to complete.
 1. Bring up the containers: `docker-compose up -d`
-1. Wait for the containers to pull and go online. This could take several minutes. You will know it's done once you are back in the command prompt. If the installation hangs, just hit `Ctrl+C` and run `docker-compose up -d` again. It tends to take a while at the `warning "ember-fullcalendar > fullcalendar@3.10.0" has unmet peer dependency "moment@^2.20.1".` build step. Just wait for it.
+1. Once the containers are up, it takes a while for the web frontend to load assets the first time. Wait about two minutes and then in the browser go to: `http://ip-address-of-droplet:4200`
 
 ### Configuration ###
 1. Create a bash script to automate git pulls: `nano /root/git-pull.sh` and insert the following code into the nano editor:
@@ -34,3 +37,7 @@ git pull
 00 * * * * /root/git-pull.sh
 ```
 4. Hit `Ctrl+X` then `Y` to save the crontab. The `git-pull.sh` script should now run every hour.
+
+
+### Notes ###
+The authors have configured the docker containers to listen on port 4200 using the HTTP protocol. I can imagine you may want to run this under HTTPS, which will require more installation and configuration of a reverse proxy (possibly NGINX).
