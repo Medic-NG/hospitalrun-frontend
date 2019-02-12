@@ -10,7 +10,7 @@
 1. Ensure Docker Compose installed properly: `which docker-compose` should return a path to the executable.
 1. Make sure git is installed; usually already installed in most DO droplets: `apt-get install git -y`
 1. Change directory: `cd /srv`
-1. Clone the HospitalRun fork repository: git clone git@github.com:Medic-NG/hospitalrun-frontend.git
+1. Clone the HospitalRun fork repository: `git clone git@github.com:Medic-NG/hospitalrun-frontend.git`
 
 
 
