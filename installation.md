@@ -12,7 +12,7 @@ sh get-docker.sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-1. Ensure Docker Compose installed properly: `which docker-compose` should return a path to the executable.
+6. Ensure Docker Compose installed properly: `which docker-compose` should return a path to the executable.
 1. Make sure git is installed; usually already installed in most DO droplets: `apt-get install git -y`
 1. Change directory: `cd /srv`
 1. Clone the HospitalRun fork repository: `git clone https://github.com/Medic-NG/hospitalrun-frontend.git`
