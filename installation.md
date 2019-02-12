@@ -1,4 +1,4 @@
-### The following commands are run in the Linux terminal ###
+### Installation ###
 1. Ensure you are acting as the sudo user. If not, use: `sudo su`
 1. Ensure running Linux kernel >= 3.10 `uname -msr`
 1. Update system packages: `apt-get update && apt-get upgrade -y`
@@ -11,4 +11,8 @@
 1. Change directory: `cd /srv`
 1. Clone the HospitalRun fork repository: git clone git@github.com:Medic-NG/hospitalrun-frontend.git
 
+
+
+
+### Configuration ###
 
