@@ -60,7 +60,7 @@
 
   // needs converted to variable
   &:active,
-  &.active { background-color: #00cca8; }
+  &.active { background-color: $black; } // #00cca8 to $black
 
   &.disabled-btn,
   &.disabled:hover,
