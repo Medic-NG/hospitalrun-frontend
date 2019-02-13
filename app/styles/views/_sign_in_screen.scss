@@ -5,11 +5,11 @@
 
 .form-signin {
   position: absolute;
-  top: 0;
+  top: 50%; // 0 to 50
   left: 50%;
   transform: translate(-50%,0);
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 350px; // 300 to 350
 
   .alert { margin-bottom: 15px; }
 
@@ -18,9 +18,9 @@
 
 .signin-contents {
   border-radius: 10px;
-  background: $blue_light3;
+  background: $blue_lightest2;  // $blue_light3 to $blue_lightest2
   padding: 20px;
-  width: 300px;
+  width: 350px; // 300 to 350
 }
 
 .form-signin-heading {
@@ -28,9 +28,9 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: $navy_drk2;
+  color: $navy_drkest;  // $navy_drk2 to $navy_drkest
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400; // 300 to 400
 }
 
 .form-signin-heading::first-letter { text-transform: uppercase; }
