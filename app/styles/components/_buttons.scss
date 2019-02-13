@@ -45,18 +45,18 @@
 .btn-default {
   border: 0;
   border-radius: 3px;
-  background-color: $green;
+  background-color: $black; // $green to $black
 
   &:hover,
-  &:focus { background-color: $green_light; }
+  &:focus { background-color: $navy_mid; } // $green_light to $navy_mid
 }
 
 .btn-primary {
-  background-color: $green;
+  background-color: $black; // $green to $black
 
   // needs converted to variable
   &:hover,
-  &:focus { background-color: #08987f; }
+  &:focus { background-color: $navy_mid; } // #08987f to $navy_mid
 
   // needs converted to variable
   &:active,
@@ -76,20 +76,20 @@
 }
 
 .btn-success {
-  border-color: #3e8f3e;
+  border-color: $black; // #3e8f3e to $black
   background-image: linear-gradient(to bottom,#5cb85c 0%,#419641 100%);
   background-repeat: repeat-x;
 
   &:hover,
   &:focus {
-    background-color: #419641;
+    background-color: $navy_mid; // #419641 to $navy_mid
     background-position: 0 -15px;
   }
 
   &:active,
   &.active {
-    border-color: #3e8f3e;
-    background-color: #419641;
+    border-color: $navy; // #3e8f3e to $navy
+    background-color: $navy_mid; // #419641 to $navy_mid
   }
 }
 
