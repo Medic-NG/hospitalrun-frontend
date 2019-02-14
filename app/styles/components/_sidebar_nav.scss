@@ -9,7 +9,7 @@
   left: 0;
   z-index: 1;
   box-shadow: 1px 0 0 #000;  // $navy_drkest to #000
-  background-color: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
+  background-color: #040C0E;  // $navy_mid2 to #040C0E
   width: 275px;
   color: $white;
   font-weight: 300;
@@ -43,7 +43,7 @@ body[dir='rtl'] .sidebar-nav {
   top: 0;
   left: 0;
   border-bottom: 1px solid #000;  // $navy_drkest to #000
-  background-color: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
+  background-color: #040C0E;  // $navy_mid2 to #040C0E
   width: 100%;
   height: 55px;
 }
@@ -173,8 +173,8 @@ body[dir='rtl'] .sidebar-nav {
     @include transition_all;
 
     display: block;
-    border-bottom: 1px solid #000;  // $navy_drkest to #000
-    background: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
+    border-bottom: 1px solid #000; // $navy_drkest to #000
+    background: #040C0E; // $navy_mid2 to #040C0E
     padding: 0 15px;
     height: 48px;
     line-height: 48px;
@@ -192,7 +192,7 @@ body[dir='rtl'] .sidebar-nav {
 
     &:hover,
     &.active {
-      background: #97afc8;  // $navy_mid to #97afc8
+      background: #525B56;  // $navy_mid to #525B56
       .mega-octicon { color: $white; }
     }
   }
@@ -200,14 +200,14 @@ body[dir='rtl'] .sidebar-nav {
   // sub section link
   .category-sub-items {
     border-bottom: 1px solid #000;  // $navy_drkest to #000
-    background: #97afc8;  // #3a4d63 to #97afc8 
+    background: #132226;  // #3a4d63 to #132226
   }
 
   .category-sub-item {
     @include transition_all;
 
     display: block;
-    background: $navy_mid3;
+    background: #132226;  // $navy_mid3 to #132226
     padding: 0 15px;
     height: 36px;
     line-height: 36px;
@@ -216,7 +216,7 @@ body[dir='rtl'] .sidebar-nav {
 
     &:hover,
     &.active {
-      background: #97afc8;  // $navy_mid to #97afc8
+      background: #525B56;  // $navy_mid to #525B56
       color: $white;
 
       .octicon {
