@@ -8,8 +8,8 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  box-shadow: 1px 0 0 $navy_drkest;
-  background-color: $navy_drk2;
+  box-shadow: 1px 0 0 #000;  // $navy_drkest to #000
+  background-color: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
   width: 275px;
   color: $white;
   font-weight: 300;
@@ -42,8 +42,8 @@ body[dir='rtl'] .sidebar-nav {
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: 1px solid $navy_drkest;
-  background-color: $navy_mid2;
+  border-bottom: 1px solid #000;  // $navy_drkest to #000
+  background-color: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
   width: 100%;
   height: 55px;
 }
@@ -173,8 +173,8 @@ body[dir='rtl'] .sidebar-nav {
     @include transition_all;
 
     display: block;
-    border-bottom: 1px solid $navy_drkest;
-    background: $navy_mid2;
+    border-bottom: 1px solid #000;  // $navy_drkest to #000
+    background: $blue_lightest2;  // $navy_mid2 to $blue_lightest2
     padding: 0 15px;
     height: 48px;
     line-height: 48px;
@@ -192,15 +192,15 @@ body[dir='rtl'] .sidebar-nav {
 
     &:hover,
     &.active {
-      background: $navy_mid;
+      background: #97afc8;  // $navy_mid to #97afc8
       .mega-octicon { color: $white; }
     }
   }
 
   // sub section link
   .category-sub-items {
-    border-bottom: 1px solid $navy_drkest;
-    background: #3a4d63;
+    border-bottom: 1px solid #000;  // $navy_drkest to #000
+    background: #97afc8;  // #3a4d63 to #97afc8 
   }
 
   .category-sub-item {
@@ -216,7 +216,7 @@ body[dir='rtl'] .sidebar-nav {
 
     &:hover,
     &.active {
-      background: $navy_mid;
+      background: #97afc8;  // $navy_mid to #97afc8
       color: $white;
 
       .octicon {
